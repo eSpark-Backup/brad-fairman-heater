@@ -1,0 +1,7 @@
+../Core/Src/app.c:14:7:Read_NTC10k	1
+../Core/Src/app.c:30:20:readADC	4
+../Core/Src/app.c:56:18:getMode	2
+../Core/Src/app.c:68:6:appSetup	1
+../Core/Src/app.c:72:6:runRotaryCleaner	4
+../Core/Src/app.c:98:6:runHeater	4
+../Core/Src/app.c:125:6:appLoop	3
