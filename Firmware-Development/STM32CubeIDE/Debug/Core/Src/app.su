@@ -1,7 +1,0 @@
-../Core/Src/app.c:14:7:Read_NTC10k	16	static
-../Core/Src/app.c:30:20:readADC	32	static
-../Core/Src/app.c:56:18:getMode	24	static
-../Core/Src/app.c:68:6:appSetup	8	static
-../Core/Src/app.c:72:6:runRotaryCleaner	16	static
-../Core/Src/app.c:98:6:runHeater	16	static
-../Core/Src/app.c:125:6:appLoop	8	static

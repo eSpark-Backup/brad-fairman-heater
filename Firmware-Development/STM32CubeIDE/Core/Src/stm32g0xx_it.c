@@ -147,8 +147,8 @@ void SysTick_Handler(void)
 void EXTI0_1_IRQHandler(void)
 {
   /* USER CODE BEGIN EXTI0_1_IRQn 0 */
-	extern HeaterBoardSensors sensors;
-	sensors.button = true;
+  extern HeaterBoardSensors sensors;
+  sensors.button = true;
   /* USER CODE END EXTI0_1_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(BUTTON_Pin);
   /* USER CODE BEGIN EXTI0_1_IRQn 1 */
