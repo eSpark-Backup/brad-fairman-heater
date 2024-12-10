@@ -42,7 +42,7 @@ bool App_longPressDetect(void)
 void App_resetBoard(void)
 {
 	HAL_GPIO_WritePin(GPIOB, GEAR_MOTOR_CTRL_Pin|HEATER_CTRL_Pin, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, LED_G_Pin|LED_R_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOA, BOOST_Pin|LED_G_Pin|LED_R_Pin, GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(VIBE_MOTOR_CTRL_GPIO_Port, VIBE_MOTOR_CTRL_Pin, GPIO_PIN_SET);
 }
 
@@ -147,6 +147,7 @@ void App_runRotaryCleaner(void)
 	if(sensors.button && !rotaryCleanerRunning)
 	{
 		HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(BOOST_GPIO_Port, BOOST_Pin, GPIO_PIN_SET);
 		App_activateGearMotor();
 		rotaryCleanerRunning = true;
 		startTime = HAL_GetTick();
@@ -184,6 +185,7 @@ void App_runHeater(void)
 	if(sensors.button && !heaterRunning)
 	{
 		HAL_GPIO_WritePin(LED_G_GPIO_Port, LED_G_Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(BOOST_GPIO_Port, BOOST_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(HEATER_CTRL_GPIO_Port, HEATER_CTRL_Pin, GPIO_PIN_SET);
 		heaterRunning = true;
 		startTime = HAL_GetTick();

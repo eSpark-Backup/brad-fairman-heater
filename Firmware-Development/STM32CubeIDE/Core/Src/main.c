@@ -20,6 +20,7 @@
 #include "main.h"
 #include "adc.h"
 #include "gpio.h"
+#include "app.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */

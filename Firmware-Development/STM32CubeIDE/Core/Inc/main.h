@@ -66,6 +66,8 @@ void Error_Handler(void);
 #define TEMP_SENSE_GPIO_Port GPIOA
 #define BAT_SENSE_Pin GPIO_PIN_2
 #define BAT_SENSE_GPIO_Port GPIOA
+#define BOOST_Pin GPIO_PIN_3
+#define BOOST_GPIO_Port GPIOA
 #define LED_G_Pin GPIO_PIN_6
 #define LED_G_GPIO_Port GPIOA
 #define LED_R_Pin GPIO_PIN_7
